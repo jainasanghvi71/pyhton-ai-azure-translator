@@ -38,13 +38,13 @@ cd python-ai-azure-translator
 ```
 
 ```
-2. **Setup virtual environement**
+2. Setup virtual environement
    python -m venv venv
    venv\Scripts\activate # Windows
 ```
 
 ```
-3. **_Install dependencies_**
+3. Install dependencies
    pip install -r requirements.txt
 ```
 
@@ -57,6 +57,6 @@ AZURE_TRANSLATOR_ENDPOINT=https://api.cognitive.microsofttranslator.com/
 ```
 
 ```
-5. **Run Stremalit**
+5. Run Stremalit
    streamlit run main.py
 ```
