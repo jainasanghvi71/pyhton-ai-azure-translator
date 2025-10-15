@@ -20,8 +20,12 @@ This repo demonstrates how to:
 🧰 Tech Stack
 
 🐍 Python 3.x
-☁️ Azure AI Foundry - AI translator
-⚙️ requests, python-dotenv, uuid, json, stremlit
+
+☁️ Azure Cognitive Services (Translator)
+
+⚙️ requests, python-dotenv, uuid, json
+
+🧪 Streamlit (simple web UI)
 
 ## 🧩 Prerequisites
 
