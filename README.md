@@ -4,10 +4,10 @@ A simple Python project that integrates **Azure AI Translator Service** to perfo
 
 This repo demonstrates how to:
 
-- 🔑 Authenticate using Azure Translator key and endpoint
-- 🌍 Detect and translate text between multiple languages
-- 📘 Run translations directly from Python scripts
-- ⚙️ Load API credentials securely using environment variables
+🔑 Authenticate using Azure Translator key and endpoint
+🌍 Detect and translate text between multiple languages
+📘 Run translations directly from Python scripts
+⚙️ Load API credentials securely using environment variables
 
 ## 🚀 Features
 
@@ -21,7 +21,7 @@ This repo demonstrates how to:
 
 🐍 Python 3.x
 ☁️ Azure AI Foundry - AI translator
-⚙️ requests, python-dotenv, uuid, json
+⚙️ requests, python-dotenv, uuid, json, stremlit
 
 ## 🧩 Prerequisites
 
