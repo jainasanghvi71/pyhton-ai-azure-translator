@@ -10,15 +10,17 @@ AZURE_TRANSLATOR_KEY = os.getenv("AZURE_TRANSLATOR_KEY")
 AZURE_TRANSLATOR_ENDPOINT = os.getenv("AZURE_TRANSLATOR_ENDPOINT")
 AZURE_TRANSLATOR_REGION = os.getenv("AZURE_TRANSLATOR_REGION")
 
-# Ensure endpoint ends with /translator/text/v3.0
+# Ensure endpoint ends with /translator/text/v3.0 only if not already present
 if AZURE_TRANSLATOR_ENDPOINT:
-	AZURE_TRANSLATOR_ENDPOINT = AZURE_TRANSLATOR_ENDPOINT.rstrip('/') + '/translator/text/v3.0'
+	if not AZURE_TRANSLATOR_ENDPOINT.rstrip('/').endswith('translator/text/v3.0'):
+		AZURE_TRANSLATOR_ENDPOINT = AZURE_TRANSLATOR_ENDPOINT.rstrip('/') + '/translator/text/v3.0'
 
 # Function to translate text using Azure Translator
+
 def translate_text(text, to_language):
 	path = '/translate?api-version=3.0'
 	params = f'&to={to_language}'
-	constructed_url = AZURE_TRANSLATOR_ENDPOINT + path + params
+	constructed_url = AZURE_TRANSLATOR_ENDPOINT.rstrip('/') + path + params
 	headers = {
 		'Ocp-Apim-Subscription-Key': AZURE_TRANSLATOR_KEY,
 		'Ocp-Apim-Subscription-Region': AZURE_TRANSLATOR_REGION,
