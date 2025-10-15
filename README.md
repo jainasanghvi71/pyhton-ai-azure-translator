@@ -55,6 +55,7 @@ cd python-ai-azure-translator
 Create a .env file in the project root:
 AZURE_TRANSLATOR_KEY=your_azure_translator_key_here
 AZURE_TRANSLATOR_ENDPOINT=https://api.cognitive.microsofttranslator.com/
+AZURE_TRANSLATOR_REGION=region
 ```
 
 ```
