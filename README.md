@@ -19,9 +19,9 @@ This repo demonstrates how to:
 
 🧰 Tech Stack
 
-🐍 Python 3.x
-☁️ Azure Cognitive Services (Translator)
-⚙️ requests, python-dotenv, uuid, json
+🐍 Python 3.x,
+☁️ Azure Cognitive Services (Translator),
+⚙️ requests, python-dotenv, uuid, json,
 🧪 Streamlit (simple web UI)
 
 ## 🧩 Prerequisites
