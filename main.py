@@ -34,8 +34,10 @@ def translate_text(text, to_language):
 	else:
 		return f"Error: {response.status_code} - {response.text}"
 
-st.title("Azure AI Translator")
-st.write("Enter text to translate using Azure AI Translator.")
+
+st.set_page_config(page_title="Azure AI Translator", page_icon="🌐", layout="centered")
+st.title("🌐 Azure AI Translator")
+st.write("Enter your text below and select a target language code (e.g., 'fr' for French, 'es' for Spanish, 'hi' for Hindi). Powered by Azure AI.")
 
 input_text = st.text_area("Text to translate", "Hello, world!")
 target_lang = st.text_input("Target language code (e.g. fr, es)")
