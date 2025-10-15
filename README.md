@@ -37,18 +37,26 @@ This repo demonstrates how to:
 cd python-ai-azure-translator
 ```
 
+```
 2. **Setup virtual environement**
    python -m venv venv
    venv\Scripts\activate # Windows
+```
 
+```
 3. **_Install dependencies_**
    pip install -r requirements.txt
+```
 
+```
 4. Add your Azure credentials
 
 Create a .env file in the project root:
 AZURE_TRANSLATOR_KEY=your_azure_translator_key_here
 AZURE_TRANSLATOR_ENDPOINT=https://api.cognitive.microsofttranslator.com/
+```
 
+```
 5. **Run Stremalit**
    streamlit run main.py
+```
