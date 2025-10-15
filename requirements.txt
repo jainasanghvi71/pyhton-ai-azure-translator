@@ -1,2 +1,4 @@
 streamlit
 azure-ai-translation-text
+requests
+python-dotenv
